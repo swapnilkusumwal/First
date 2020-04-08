@@ -1,0 +1,22 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "My first real project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnilkusumwal/First.git"
+  },
+  "author": "Swapnil Kusumwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swapnilkusumwal/First/issues"
+  },
+  "homepage": "https://github.com/swapnilkusumwal/First#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

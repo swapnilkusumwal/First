@@ -38,10 +38,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p class="d-none  d-sm-block">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 ml-5 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12  col-sm">
+                <div class="col-12  col-sm align-self-center">
+                    <a href="#reserve"><button type="button" class="btn btn-warning col-12">Reserver Table</button></a>
                 </div>
             </div>
         </div>
@@ -56,7 +57,7 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none  d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza,
                              topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
@@ -66,13 +67,20 @@
 
 
         <div class="row row-content align-items-center"> 
-            <div  class="col-12 col-sm-4 col-md-3 align-items-center">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md ">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none  d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
+            
+            <!-- <div class="media-body col-12 col-sm-8 order-first"> -->
+                <div  class="col-12 col-sm-4 col-md-3 align-items-center">
+                    <h3>This Month's Promotions</h3>
+                </div>
+                <div class="col col-sm col-md align-items-center">
+                    <div class="media">
+                        <img src="img/buffet.png" class="d-flex order-last offset-2 ml-5 img-thumbnail align-self-center" alt="buffet">
+                        <div class="media-body ">
+                            <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                            <p class="d-none  d-sm-block ">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
+                    </div>
+                </div>
         </div>
 
         <div class="row row-content align-items-center" >
@@ -90,7 +98,50 @@
                 </div>
             </div>
         </div>
+            
+       
+        <div class="col-12 col-md">
+        </div>
+        <div class="row row-content" id="reserve">
+            <form class="card offset-sm-2 col-12 col-sm-8">
+                <div class="card card-header form-group row bg-warning text-white">
+                    <h3>Reserve a Table</h3>
+                </div>
+                <div class="form-group row">
+                    <label for="numguests" class="col-12 col-form-label">Number of Guests</label>
+                    <input type="radio" value="1" id="1" name="numguestes" class="ml-3 mt-1">
+                    <label for="1" class="col-1 mt-0 ">1</label>
+                    <input type="radio" value="2" id="2" name="numguestes" class="mt-1">
+                    <label for="2" class="col-1 ">2</label>
+                    <input type="radio" value="3" id="3" name="numguestes" class="mt-1">
+                    <label for="3" class="col-1">3</label>
+                    <input type="radio" value="4" id="4" name="numguestes" class="mt-1">
+                    <label for="4" class="col-1">4</label>
+                    <input type="radio" value="5" id="5" name="numguestes" class="mt-1">
+                    <label for="5" class="col-1">5</label>
+                    <input type="radio" value="6" id="6" name="numguestes" class="mt-1">
+                    <label for="6" class="col-1">6</label>
+                </div>
+                <div class="form-group row">
+                    <label for="time" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                    <div class="col-12 col-sm-4">
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">
+                            Reserve
+                        </button>                            
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    
 
     <footer class="footer">
         <div class="container">
@@ -107,13 +158,13 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                      121, Clear Water Bay Road<br>
+                      Clear Water Bay, Kowloon<br>
+                      HONG KONG<br>
+                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                   </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
